@@ -1,0 +1,28 @@
+{
+  "name": "ribcage-menu",
+  "version": "0.0.1",
+  "description": "A menu system for ribcage-ui",
+  "main": "menu.js",
+  "dependencies": {
+    "ribcage-button": "~0.0.1",
+    "ribcage-view": "~0.0.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Techwraith/ribcage-menu.git"
+  },
+  "keywords": [
+    "menu",
+    "ribcage",
+    "ribcage-ui",
+    "backbone"
+  ],
+  "author": "techwraith",
+  "license": "MIT",
+  "gitHead": "f7bc5424505d4a293f8f3b9ab012e4b508473730",
+  "readmeFilename": "README.md"
+}
