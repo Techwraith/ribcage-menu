@@ -1,7 +1,7 @@
 'use strict';
 
 var Base = require('ribcage-view')
-  , Button = require('ribcage-button');
+  , Button = require('ribcage-button')
 
 var MenuBar = Base.extend({
   tagName: 'div'
@@ -18,16 +18,18 @@ var MenuBar = Base.extend({
   }
 
 , addButton: function (opts) {
-    var button = new Button(opts)
-
-    opts.tagName = 'span';
-    opts.className = 'btn-bar'
+    var button
 
     // someone may have passed in an already built button
     // if so, just append it now
     if (typeof opts.render === 'function') {
       return this.appendSubview(opts);
     }
+
+    opts.tagName = 'span';
+    opts.className = 'btn-bar'
+
+    button = new Button(opts)
 
     this.appendSubview(button);
   }
